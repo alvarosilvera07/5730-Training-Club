@@ -6,7 +6,7 @@
     <title>5730 Training CLUB</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        /* Estilo para el fondo negro de la página y color de texto blanco */
+        /* Estilo para el fondo negro de la pagina y color de texto blanco */
         body {
             background-color: #000000; /* Fondo negro */
             color: white; /* Color de texto blanco por defecto */
@@ -15,33 +15,33 @@
             padding: 0;
         }
 
-        /* Estilo para centrar el titulo y color blanco */
+        /* Estilo para centrar el título y color blanco */
         h1 {
             text-align: center;
             font-weight: 700;
             color: white; /* Título en blanco */
-            transition: all 0.3s ease; /* Transicion suave */
+            transition: all 0.3s ease; /* Transición suave */
         }
 
-        /* Estilos Poppins para el texto */
+        /* Estilos adicionales para el texto */
         h2, h3 {
             font-family: 'Poppins', sans-serif;
         }
 
-        /* Color blanco para los elementos de lista y text Roboto */
+        /* Color blanco para los elementos de lista */
         ul {
             font-family: 'Roboto', sans-serif;
             color: white; /* Texto blanco */
         }
 
-        /* Efecto de color en el titulo con raton */
+        /* Efecto de color al pasar el mouse en el title */
         h1:hover {
             color: #28a745; /* Cambia a verde */
             cursor: pointer; /* Cambia el cursor a mano */
             transform: scale(1.1); /* Aumenta el tamaño del titulo */
         }
 
-        /* Animacion del titulo al cargar la pagina */
+        /* Animación de aparición del titulo al cargar la pagina */
         h1 {
             opacity: 0; /* Inicialmente invisible */
             animation: fadeIn 2s forwards; /* Aparece con animacion */
@@ -69,12 +69,14 @@
         .imagenes-en-fila {
             display: flex;
             justify-content: center;
-            gap: 10px; /* Espacio entre img */
+            gap: 10px; /* Espacio entre las imagenes */
             margin-top: 20px; /* Espacio superior */
+            flex-wrap: wrap; /* Permite que las imagenes se acomoden en varias filas si es necesario */
         }
-        
+
         .imagenes-en-fila img {
-            width: 400px;
+            width: 100%; /* Imagenes al 100% del ancho disponible */
+            max-width: 400px; /* Limita el tamaño máximo de las imagenes */
             height: auto;
         }
 
@@ -84,7 +86,7 @@
             padding: 15px;
             font-size: 0.9em;
             color: white;
-            background-color: #333333; /* Fondo gris */
+            background-color: #333333; /* Fondo gris oscuro */
             margin-top: 20px;
         }
 
@@ -105,6 +107,28 @@
         .map-link a:hover {
             text-decoration: underline; /* Subrayado al pasar el cursor */
         }
+
+        /* Media query  para hacer el diseño mas responsiv en pantallas pequeñas */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em; /* Reduce el tamaño del titulo */
+            }
+
+            /* Ajusta el tamaño del boton en dispositivos pequeños */
+            .button-container a {
+                font-size: 1em; /* Tamaño de fuente mas grande para facilitar la lectura */
+                padding: 10px 20px; /* Mas espacio en los botones */
+            }
+
+            .imagenes-en-fila img {
+                width: 90%; /* Las imagenes ocupan el 90% del ancho de la pantalla */
+                max-width: none; /* Elimina el límite de tamaño máximo */
+            }
+
+            footer {
+                font-size: 0.8em; /* Reduce el tamaño del texto en el pie de pagina */
+            }
+        }
     </style>
 </head>
 <body>
@@ -121,7 +145,7 @@
         <ul>- 5730 Training Club es un centro de crosstraining ubicado en distintos puntos de la ciudad.</ul>
     </h3>
     
-    <!-- Imagenes centradas -->
+    <!-- Contenedor de imagenes centradas -->
     <div class="imagenes-en-fila">
         <img src="img/Frase.jfif" alt="El Dolor de hoy es el éxito de mañana">
         <img src="img/Frase2.jpg" alt="">
@@ -135,7 +159,7 @@
         <a href="https://www.google.com/maps/place/5730+Training+Club+Tte.+Turrado/@-33.7051357,-65.4994976,12z/data=!4m10!1m2!2m1!1s5730+training+club+villa+mercedes!3m6!1s0x95d16bfaca0992d3:0xe271786b72bd73cf!8m2!3d-33.6747383!4d-65.467854!15sCiE1NzMwIHRyYWluaW5nIGNsdWIgdmlsbGEgbWVyY2VkZXOSAQtzcG9ydHNfY2x1YuABAA!16s%2Fg%2F11s42_5wlh?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">5730 Training Club</a>
     </div>
 
-    <!-- Footer con derechos reservados -->
+    <!-- Pie de pagina con derechos reservados -->
     <footer>
         &copy; 2024 "5730 Training Club". Todos los derechos reservados.
     </footer>
