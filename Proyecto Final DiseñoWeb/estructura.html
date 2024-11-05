@@ -15,39 +15,39 @@
             padding: 0;
         }
 
-        /* Estilo para centrar el título y color blanco */
+        /* Estilo para centrar el titulo y color blanco */
         h1 {
             text-align: center;
             font-weight: 700;
             color: white; /* Título en blanco */
-            transition: all 0.3s ease; /* Transición suave */
+            transition: all 0.3s ease; /* Transicion suave */
         }
 
-        /* Estilos adicionales para el texto */
+        /* Estilos Poppins para el texto */
         h2, h3 {
             font-family: 'Poppins', sans-serif;
         }
 
-        /* Color blanco para los elementos de lista */
+        /* Color blanco para los elementos de lista y text Roboto */
         ul {
             font-family: 'Roboto', sans-serif;
             color: white; /* Texto blanco */
         }
 
-        /* Efecto de color al pasar el ratón sobre el título */
+        /* Efecto de color en el titulo con raton */
         h1:hover {
             color: #28a745; /* Cambia a verde */
             cursor: pointer; /* Cambia el cursor a mano */
-            transform: scale(1.1); /* Aumenta el tamaño del título */
+            transform: scale(1.1); /* Aumenta el tamaño del titulo */
         }
 
-        /* Animación de aparición del título al cargar la página */
+        /* Animacion del titulo al cargar la pagina */
         h1 {
             opacity: 0; /* Inicialmente invisible */
-            animation: fadeIn 2s forwards; /* Aparece con animación */
+            animation: fadeIn 2s forwards; /* Aparece con animacion */
         }
 
-        /* Definir la animación de desvanecimiento */
+        /* Definir la animacion de desvanecimiento */
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -59,17 +59,17 @@
             }
         }
 
-        /* Centra el contenedor del botón */
+        /* Centra el contenedor del boton */
         .button-container {
             text-align: center;
-            margin-top: 10px; /* Espacio entre el título y el botón */
+            margin-top: 10px; /* Espacio entre el titulo y el boton */
         }
 
-        /* Estilos para centrar las imágenes en una fila */
+        /* Estilos para centrar las imagenes en una fila */
         .imagenes-en-fila {
             display: flex;
             justify-content: center;
-            gap: 10px; /* Espacio entre las imágenes */
+            gap: 10px; /* Espacio entre img */
             margin-top: 20px; /* Espacio superior */
         }
         
@@ -78,13 +78,13 @@
             height: auto;
         }
 
-        /* Estilo para el pie de página */
+        /* Estilo para el pie de pagina */
         footer {
             text-align: center;
             padding: 15px;
             font-size: 0.9em;
             color: white;
-            background-color: #333333; /* Fondo gris oscuro */
+            background-color: #333333; /* Fondo gris */
             margin-top: 20px;
         }
 
@@ -110,7 +110,7 @@
 <body>
     <h1>• 5730 Training CLUB •</h1>  
 
-    <!-- Contenedor centrado para el botón -->
+    <!-- Contenedor centrado para el boton -->
     <div class="button-container">
         <a href="https://linktr.ee/5730crossfit" target="_blank" id="contacto">Contáctanos👇</a>
     </div>
@@ -121,7 +121,7 @@
         <ul>- 5730 Training Club es un centro de crosstraining ubicado en distintos puntos de la ciudad.</ul>
     </h3>
     
-    <!-- Contenedor de imágenes centradas -->
+    <!-- Imagenes centradas -->
     <div class="imagenes-en-fila">
         <img src="img/Frase.jfif" alt="El Dolor de hoy es el éxito de mañana">
         <img src="img/Frase2.jpg" alt="">
@@ -135,7 +135,7 @@
         <a href="https://www.google.com/maps/place/5730+Training+Club+Tte.+Turrado/@-33.7051357,-65.4994976,12z/data=!4m10!1m2!2m1!1s5730+training+club+villa+mercedes!3m6!1s0x95d16bfaca0992d3:0xe271786b72bd73cf!8m2!3d-33.6747383!4d-65.467854!15sCiE1NzMwIHRyYWluaW5nIGNsdWIgdmlsbGEgbWVyY2VkZXOSAQtzcG9ydHNfY2x1YuABAA!16s%2Fg%2F11s42_5wlh?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">5730 Training Club</a>
     </div>
 
-    <!-- Pie de página con derechos reservados -->
+    <!-- Footer con derechos reservados -->
     <footer>
         &copy; 2024 "5730 Training Club". Todos los derechos reservados.
     </footer>
@@ -144,9 +144,9 @@
         // Selecciona el enlace con id "contacto"
         const contactoLink = document.getElementById('contacto');
 
-        // Aplica estilos de botón al enlace
+        // Aplica estilos de boton al enlace
         contactoLink.style.display = 'inline-block';
-        contactoLink.style.padding = '8px 15px'; // Tamaño del botón
+        contactoLink.style.padding = '8px 15px'; // Tamaño del boton
         contactoLink.style.backgroundColor = '#28a745'; // Color de fondo verde
         contactoLink.style.color = 'white'; // Color de texto blanco
         contactoLink.style.fontSize = '0.9em'; // Tamaño de fuente más pequeño
