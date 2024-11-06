@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5730 Training CLUB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo para el fondo negro de la pagina y color de texto blanco */
+        body {
+            background-color: #000000; /* Fondo negro */
+            color: white; /* Color de texto blanco por defecto */
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para centrar el título y color blanco */
+        h1 {
+            text-align: center;
+            font-weight: 700;
+            color: white; /* Título en blanco */
+            transition: all 0.3s ease; /* Transición suave */
+        }
+
+        /* Estilos adicionales para el texto */
+        h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Color blanco para los elementos de lista */
+        ul {
+            font-family: 'Roboto', sans-serif;
+            color: white; /* Texto blanco */
+        }
+
+        /* Efecto de color al pasar el mouse en el title */
+        h1:hover {
+            color: #28a745; /* Cambia a verde */
+            cursor: pointer; /* Cambia el cursor a mano */
+            transform: scale(1.1); /* Aumenta el tamaño del titulo */
+        }
+
+        /* Animación de aparición del titulo al cargar la pagina */
+        h1 {
+            opacity: 0; /* Inicialmente invisible */
+            animation: fadeIn 2s forwards; /* Aparece con animacion */
+        }
+
+        /* Definir la animacion de desvanecimiento */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Centra el contenedor del boton */
+        .button-container {
+            text-align: center;
+            margin-top: 10px; /* Espacio entre el titulo y el boton */
+        }
+
+        /* Estilos para centrar las imagenes en una fila */
+        .imagenes-en-fila {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Espacio entre las imagenes */
+            margin-top: 20px; /* Espacio superior */
+            flex-wrap: wrap; /* Permite que las imagenes se acomoden en varias filas si es necesario */
+        }
+
+        .imagenes-en-fila img {
+            width: 100%; /* Imagenes al 100% del ancho disponible */
+            max-width: 400px; /* Limita el tamaño máximo de las imagenes */
+            height: auto;
+        }
+
+        /* Estilo para el pie de pagina */
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            color: white;
+            background-color: #333333; /* Fondo gris oscuro */
+            margin-top: 20px;
+        }
+
+        /* Estilo para el enlace a Google Maps */
+        .map-link {
+            text-align: center;
+            margin-top: 20px; /* Espacio superior */
+            font-size: 1em;
+            color: white;
+        }
+
+        .map-link a {
+            color: #28a745; /* Color verde para el enlace */
+            text-decoration: none; /* Sin subrayado */
+            font-weight: bold;
+        }
+
+        .map-link a:hover {
+            text-decoration: underline; /* Subrayado al pasar el cursor */
+        }
+
+        /* Media query  para hacer el diseño mas responsiv en pantallas pequeñas */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em; /* Reduce el tamaño del titulo */
+            }
+
+            /* Ajusta el tamaño del boton en dispositivos pequeños */
+            .button-container a {
+                font-size: 1em; /* Tamaño de fuente mas grande para facilitar la lectura */
+                padding: 10px 20px; /* Mas espacio en los botones */
+            }
+
+            .imagenes-en-fila img {
+                width: 90%; /* Las imagenes ocupan el 90% del ancho de la pantalla */
+                max-width: none; /* Elimina el límite de tamaño máximo */
+            }
+
+            footer {
+                font-size: 0.8em; /* Reduce el tamaño del texto en el pie de pagina */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>• 5730 Training CLUB •</h1>  
+
+    <!-- Contenedor centrado para el boton -->
+    <div class="button-container">
+        <a href="https://linktr.ee/5730crossfit" target="_blank" id="contacto">Contáctanos👇</a>
+    </div>
+
+    <h3>
+        <ul>- 10 años de experiencia nos avalan.</ul>
+        <ul>- Ofrecemos diversas clases, incluyendo opciones virtuales disponibles solo a través del celular. También organizamos eventos como competencias de CrossFit.</ul>
+        <ul>- 5730 Training Club es un centro de crosstraining ubicado en distintos puntos de la ciudad.</ul>
+    </h3>
+    
+    <!-- Contenedor de imagenes centradas -->
+    <div class="imagenes-en-fila">
+        <img src="img/Frase.jfif" alt="El Dolor de hoy es el éxito de mañana">
+        <img src="img/Frase2.jpg" alt="">
+        <img src="img/NoPain.jfif" alt="No Pain No Gain">
+        <img src="img/Against you.jpg" alt="Stronger Than Excuses">
+    </div>
+
+    <!-- Enlace a Google Maps -->
+    <div class="map-link">
+        <p>Encuéntranos en Google Maps:</p>
+        <a href="https://www.google.com/maps/place/5730+Training+Club+Tte.+Turrado/@-33.7051357,-65.4994976,12z/data=!4m10!1m2!2m1!1s5730+training+club+villa+mercedes!3m6!1s0x95d16bfaca0992d3:0xe271786b72bd73cf!8m2!3d-33.6747383!4d-65.467854!15sCiE1NzMwIHRyYWluaW5nIGNsdWIgdmlsbGEgbWVyY2VkZXOSAQtzcG9ydHNfY2x1YuABAA!16s%2Fg%2F11s42_5wlh?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">5730 Training Club</a>
+    </div>
+
+    <!-- Pie de pagina con derechos reservados -->
+    <footer>
+        &copy; 2024 "5730 Training Club". Todos los derechos reservados.
+    </footer>
+
+    <script>
+        // Selecciona el enlace con id "contacto"
+        const contactoLink = document.getElementById('contacto');
+
+        // Aplica estilos de boton al enlace
+        contactoLink.style.display = 'inline-block';
+        contactoLink.style.padding = '8px 15px'; // Tamaño del boton
+        contactoLink.style.backgroundColor = '#28a745'; // Color de fondo verde
+        contactoLink.style.color = 'white'; // Color de texto blanco
+        contactoLink.style.fontSize = '0.9em'; // Tamaño de fuente más pequeño
+        contactoLink.style.fontWeight = 'bold';
+        contactoLink.style.border = 'none'; // Sin borde
+        contactoLink.style.borderRadius = '5px'; // Bordes redondeados
+        contactoLink.style.textDecoration = 'none';
+        contactoLink.style.cursor = 'pointer';
+
+        // Agrega un efecto al pasar el cursor
+        contactoLink.addEventListener('mouseover', () => {
+            contactoLink.style.backgroundColor = '#218838'; // Color de fondo al pasar el cursor (verde oscuro)
+        });
+
+        // Restaura el color cuando el cursor sale
+        contactoLink.addEventListener('mouseout', () => {
+            contactoLink.style.backgroundColor = '#28a745'; // Color de fondo original
+        });
+
+        // Efecto de "clic" con un cambio temporal de escala
+        contactoLink.addEventListener('mousedown', () => {
+            contactoLink.style.transform = 'scale(0.95)'; // Reduce el tamaño al hacer clic
+        });
+        contactoLink.addEventListener('mouseup', () => {
+            contactoLink.style.transform = 'scale(1)'; // Vuelve al tamaño original al soltar
+        });
+    </script>
+</body>
+</html>
